@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #ffffff, #8c8787);
+}
+
+.container{
+    margin: 0 15px;
+}
+
+.form_box{
+    width: 100%;
+    max-width: 450px;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+    display: none;
+}
+
+.form_box.active{
+    display: block;
+}
+
+h2{
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 20px
+}
+
+select,
+input{
+    width: 100%;
+    padding: 12px;
+    background: #eee;
+    border-radius: 6px; /*kelancipan sudut*/
+    border: none; /* outline */
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px; /* jarak antar kolom*/
+
+}
+
+button {
+    width: 100%;
+    padding: 12px; /*jarak vertikal (lebar vertikal)*/
+    background: rgb(0, 0, 0);
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+button:hover{
+    background: #929292;
+}
+
+p{
+    font-size: 14.5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p a {
+    color:#7c6e6e;
+    text-decoration: none;
+
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+
+.error-message{
+    padding: 12px;
+    background: black;
+    border-radius: 6px;
+    font-size: 16px;
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+h1{
+    font-size: 50px;
+}
+span{
+    color:rgb(234, 0, 0);
+}
+
+.box{
+    font-size: 30px;
+}
+.box p{
+    font-size: 16px;
+}
+
+.box button{
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.box_user {
+    position: absolute;
+    top:0;
+    width: 100%;
+    padding: 20px; 
+    box-sizing: border-box;
+    border: 2px solid white; /* Border putih dengan ketebalan 2px */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5); /* Shadow hitam */
+    z-index: 1;
+}
+
+
+.box_user h1{
+    margin-left: 80px;
+}
+
+.button_user_logout {
+        position: absolute;
+        top: 30px;
+        right: 60px;
+        width: 100px;
+        padding: 10px;
+        border-radius: 6px;
+        box-shadow: 0 0 10px rgba(195, 4, 254, 0.1);
+        text-align: center;
+        display: flex;
+        justify-content: center;  
+        align-items: center;   
+        z-index: 2; 
+}
+
+
+/*user_page*/
+.button_user_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.menu-box {
+    background: linear-gradient(to bottom, #e0e0e0, #b0b0b0);
+    padding: 30px;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color:#333;
+}
+
+.menu-button {
+    display: block;
+    width: 500px;
+    height: 50px;
+    padding: 12px;
+    margin: 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(2, 2, 2);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/*izin.php*/
+
+.izin_page {
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #e0e0e0, #b0b0b0);
+    display: block;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.input_nama {
+    font-size: 16px;
+    background: rgb(255, 255, 255);
+}
+
+.input_alasan {
+    width: 100%; /* Lebar penuh */
+    height: 100px; /* Sesuaikan tinggi */
+    font-size: 16px; /* Perbesar teks */
+    padding: 10px; /* Beri jarak dalam */
+    border-radius: 6px;
+    background: white;
+    outline: none;
+    resize: none;
+}
+
+.input_submit {
+    margin-top: 20px; 
+}
+
+.sukses_izin {
+    font-size: 200px;
+}
+
+.riwayat_absensi{
+    display: block;
+
+}
